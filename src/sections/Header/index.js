@@ -1,10 +1,19 @@
 import React from "react";
 
-const Header = () => {
+import "./header.scss";
+
+const Header = ({ id }) => {
     return (
-    <>
-            I'm the Header!
-        </>
+        <header className="header" id={id}>
+             <div className="banner-wrapper">
+                <section className="banner">
+<h1 className="banner__title" >
+            Full Stack Developer
+            <span className="banner__title-developer">Samuel Shum</span>
+          </h1>
+                </section>
+            </div>
+        </header>
     )
 }
 
