@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #0a1621;
+  padding-top: 90px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8rem;
+  background: #0a1621;
+  padding: 2rem 5rem;
+  letter-spacing: 0.12em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 100%;
+  -webkit-box-shadow: 0 0 5px #5275a8;
+          box-shadow: 0 0 5px #5275a8;
+}
+
+.nav__title-text {
+  font-size: 3rem;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  right: 0;
+  position: absolute;
+  margin-right: 0.5em;
+}
+
+.nav__list-item {
+  cursor: pointer;
+  display: block;
+  padding: 0.8rem 1.6rem;
+  position: relative;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid #fc7a1e;
+  margin-right: 2rem;
+}
+
+.nav__list-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #fc7a1e;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.nav__list-item:hover::after, .nav__list-item:focus::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+/*# sourceMappingURL=nav.css.map */
