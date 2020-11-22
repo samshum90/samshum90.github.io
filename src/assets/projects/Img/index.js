@@ -1,0 +1,10 @@
+export { default as blackjackImg } from "./blackjack.png";
+export { default as covidImg } from "./covid.png";
+export { default as discreationImg } from "./dis-creation.png";
+export { default as fantasyAdventureImg } from "./fantasyAdventure.png";
+export { default as ghibliImg } from "./ghibli.png";
+export { default as gymImg } from "./gym.jpg";
+export { default as hotelTechnikaImg } from "./hotelTechnika.png";
+export { default as recipeBookImg } from "./recipeBook.png";
+export { default as shopImg } from "./shop.png";
+export { default as ticTacToeImg } from "./ticTacToe.png";

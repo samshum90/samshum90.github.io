@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AESA,OAAO,CAAC,mEAAI;ADPZ,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,KAAK;CACjB;;AAED,AAAA,IAAI,CAAC;EACH,WAAW,ECHD,QAAQ,EAAE,KAAK,EAAE,UAAU;EDIrC,SAAS,ECEC,MAAM;EDDhB,KAAK,ECdM,IAAI;EDef,UAAU,ECdY,OAAO;EDe7B,WAAW,ECHG,IAAI;CDInB",
+    "sources": [
+        "projects.scss",
+        "../../styles/main.scss",
+        "../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "projects.css"
+}
