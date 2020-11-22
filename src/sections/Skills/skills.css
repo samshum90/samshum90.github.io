@@ -30,7 +30,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 
 .skills-wrapper:last-child {
@@ -48,8 +48,8 @@ body {
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(160px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 90%;
   gap: 4rem 0;
 }
