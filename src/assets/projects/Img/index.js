@@ -7,4 +7,5 @@ export { default as gymImg } from "./gym.jpg";
 export { default as hotelTechnikaImg } from "./hotelTechnika.png";
 export { default as recipeBookImg } from "./recipeBook.png";
 export { default as shopImg } from "./shop.png";
+export { default as spendItImg } from "./spendIt.png";
 export { default as ticTacToeImg } from "./ticTacToe.png";

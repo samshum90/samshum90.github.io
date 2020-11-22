@@ -8,6 +8,7 @@ import {
   hotelTechnikaImg,
   recipeBookImg,
   shopImg,
+  spendItImg,
   ticTacToeImg,
 } from "../../assets/projects/Img";
 
@@ -40,9 +41,19 @@ import {
   heroku,
   netlify,
   intelliJ,
+  reactRouter,
+  jwt,
+  stripe,
+  semanticUi,
+  spring,
+  flask,
+  vuetify,
+  c,
+  redux,
+  chartjs,
 } from "../../assets/badges/SVG";
 
-import { sinatra } from "../../assets/badges/PNG";
+import { sinatra, materialUi } from "../../assets/badges/PNG";
 
 const projectList = [
   {
@@ -56,6 +67,7 @@ const projectList = [
     urls: {
       github: "http://github.com/samshum90/Solo_Ruby_Project_Gym",
       live: "https://gym-master-3000.herokuapp.com/",
+      dev: null,
     },
     tech: [
       {
@@ -83,6 +95,7 @@ const projectList = [
     urls: {
       github: "https://github.com/samshum90/Wk7_Wkend_Hw_Ghilbli_Vue_API",
       live: null,
+      dev: null,
     },
     tech: [
       {
@@ -102,6 +115,7 @@ const projectList = [
     urls: {
       github: "https://github.com/samshum90/Javasctipt_project",
       live: "https://boring-wozniak-c62dd8.netlify.app#/",
+      dev: null,
     },
     tech: [
       {
@@ -141,6 +155,7 @@ const projectList = [
     urls: {
       github: "https://github.com/samshum90/Wk11_Wkend_HW_Java_Blackjack",
       live: null,
+      dev: null,
     },
     tech: [
       {
@@ -173,6 +188,199 @@ const projectList = [
       {
         src: intelliJ,
         alt: "IntelliJ Idea",
+      },
+    ],
+  },
+  {
+    title: "Our Shop Best Shop",
+    description:
+      "Full-stack e commerce store built in React as the frontend and Spring Boot with a MongoDB database in the backend Codeclan merchandise was used as a prototype.",
+    img: {
+      src: shopImg,
+      alt: "Our Shop best Shop",
+    },
+    urls: {
+      github: "https://github.com/samshum90/Final_Group_Project_Store",
+      live: "https://codeclan-shop.web.app/",
+      dev: null,
+    },
+    tech: [
+      {
+        src: react,
+        alt: "React",
+      },
+      {
+        src: reactRouter,
+        alt: "React Router",
+      },
+      {
+        src: spring,
+        alt: "Spring Boot",
+      },
+      {
+        src: jwt,
+        alt: "JSON Web Token",
+      },
+      {
+        src: stripe,
+        alt: "Stripe Payment",
+      },
+      {
+        src: semanticUi,
+        alt: "Semantic Ui",
+      },
+    ],
+  },
+  {
+    title: "Dis-creation",
+    description:
+      "My team's entry to the Automation Anywhere COVID-19 Botathon hackathon. We built a Hr app to empower staff to make informed decisions on employee requests.",
+    img: {
+      src: discreationImg,
+      alt: "Dis-creation",
+    },
+    urls: {
+      github: "https://github.com/samshum90/Dis-cretion",
+      live: "https://dis-cretion.herokuapp.com/",
+      dev: "https://devpost.com/software/dis-cretion-cnhlfw",
+    },
+    tech: [
+      {
+        src: vue,
+        alt: "Vue",
+      },
+      {
+        src: flask,
+        alt: "Flask",
+      },
+      {
+        src: vuetify,
+        alt: "Vuetify",
+      },
+    ],
+  },
+  {
+    title: "Tic-Tac-Toe Game",
+    description:
+      "Game I made after completing C Programming For Beginners - Master the C Language Udemy Tim Buchalka’s Learn Programming Academy, Jason Fedin",
+    img: {
+      src: ticTacToeImg,
+      alt: "Tic Tac Toe Game",
+    },
+    urls: {
+      github: "https://github.com/samshum90/TicTakToe_C",
+      live: null,
+      dev: null,
+    },
+    tech: [
+      {
+        src: c,
+        alt: "C Logo",
+      },
+    ],
+  },
+  {
+    title: "Hotel Technika",
+    description:
+      "This Hotel management app was built to update and build familiarity with <b>React 16.8</b>. Designed to be used by hotel staff member to create rooms, register guests and to book guest into those rooms.",
+    img: {
+      src: hotelTechnikaImg,
+      alt: "Hotal Tchnika App",
+    },
+    urls: {
+      github:
+        "https://github.com/samshum90/Hotel_Technika_React_Redux_Firebase",
+      live: "https://hotel-technika.web.app/",
+      dev: null,
+    },
+    tech: [
+      {
+        src: react,
+        alt: "React",
+      },
+      {
+        src: reactRouter,
+        alt: "React Router",
+      },
+      {
+        src: redux,
+        alt: "Redux",
+      },
+      {
+        src: firebase,
+        alt: "Firebase",
+      },
+      {
+        src: materialUi,
+        alt: "Material UI",
+      },
+    ],
+  },
+  {
+    title: "Recipe Book",
+    description:
+      "App built during Angular - The Complete Guide (2020 Edition) by Maximilian Schwarzmüller course. App used to save recipes and also build a shopping list.",
+    img: {
+      src: recipeBookImg,
+      alt: "Recipe Book App",
+    },
+    urls: {
+      github: "https://github.com/samshum90/Angular_Recipe_Project",
+      live: "https://angularrecipe-5668c.web.app/",
+      dev: null,
+    },
+    tech: [
+      {
+        src: angular,
+        alt: "Angular",
+      },
+      {
+        src: typescript,
+        alt: "Typescript",
+      },
+      {
+        src: firebase,
+        alt: "Firebase",
+      },
+      {
+        src: bootstrap,
+        alt: "Bootstrap",
+      },
+    ],
+  },
+  {
+    title: "Spend it.",
+    description:
+      "Progressive web app built in Angular using the Ionic Framework. Allow users to track their spending to have better control over their finances.",
+    img: {
+      src: spendItImg,
+      alt: "Spend It. app",
+    },
+    urls: {
+      github: "https://github.com/samshum90/spend_it_ionic_angular_firebase",
+      live: "https://spend-it-172ed.web.app/",
+      dev: null,
+    },
+    tech: [
+      {
+        src: angular,
+        alt: "Angular",
+      },
+      {
+        src: typescript,
+        alt: "Typescript",
+      },
+      {
+        src: firebase,
+        alt: "Firebase",
+      },
+      {
+        src: chartjs,
+        alt: "Chart Js",
+      },
+      {
+        src: ionic,
+        alt: "Ionic",
       },
     ],
   },
