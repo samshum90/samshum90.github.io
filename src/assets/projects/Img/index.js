@@ -1,6 +1,6 @@
 export { default as blackjackImg } from "./blackjack.png";
 export { default as covidImg } from "./covid.png";
-export { default as discreationImg } from "./dis-creation.png";
+export { default as discretionImg } from "./dis-cretion.png";
 export { default as fantasyAdventureImg } from "./fantasyAdventure.png";
 export { default as ghibliImg } from "./ghibli.png";
 export { default as gymImg } from "./gym.jpg";

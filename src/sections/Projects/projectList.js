@@ -1,7 +1,7 @@
 import {
   blackjackImg,
   covidImg,
-  discreationImg,
+  discretionImg,
   fantasyAdventureImg,
   ghibliImg,
   gymImg,
@@ -236,7 +236,7 @@ const projectList = [
     description:
       "My team's entry to the Automation Anywhere COVID-19 Botathon hackathon. We built a Hr app to empower staff to make informed decisions on employee requests.",
     img: {
-      src: discreationImg,
+      src: discretionImg,
       alt: "Dis-creation",
     },
     urls: {

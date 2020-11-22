@@ -1,0 +1,10 @@
+@import "../../styles/main.scss";
+
+.footer {
+  background-color: $theme-color;
+  width: 100%;
+  height: $footer-height;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

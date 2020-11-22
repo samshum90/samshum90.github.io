@@ -1,11 +1,11 @@
 import React from "react";
 
+import "./footer.scss";
+
 const Footer = () => {
-    return (
-    <>
-            this is the footer!
-        </>
-    )
-}
+  return (
+
+  );
+};
 
 export default Footer;
