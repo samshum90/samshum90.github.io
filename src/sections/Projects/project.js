@@ -52,8 +52,8 @@ Project.propTypes = {
     }).isRequired,
     urls: PropTypes.shape({
       github: PropTypes.string.isRequired,
-      live: PropTypes.string.isRequired,
-      dev: PropTypes.string.isRequired,
+      live: PropTypes.string,
+      dev: PropTypes.string,
     }).isRequired,
     tech: PropTypes.arrayOf(
       PropTypes.shape({
