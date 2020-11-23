@@ -19,18 +19,74 @@ body {
 }
 
 .footer {
-  background-color: #5275a8;
   width: 100%;
   height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__link {
+  border: solid 2px #fff;
+  border-radius: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 4.9rem;
+  width: 4.9rem;
+  margin-right: 2rem;
+  padding: 0.3rem;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.footer__link::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 102%;
+  width: 102%;
+  z-index: -1;
+  background: #fff;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.footer__link:hover::after, .footer__link:focus::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.footer__link-svg {
+  fill: #fff;
+}
+
+.footer__link-svg:hover path {
+  fill: #0a1621;
+}
+
+#linkedin {
+  height: 3rem;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+#envelope {
+  height: 2.4rem;
+  margin-left: 0.4rem;
+  margin-top: 0.7rem;
+}
+
+#pdf {
+  height: 3.7rem;
+  margin-left: 0.6rem;
+  margin-top: 0.1rem;
 }
 /*# sourceMappingURL=footer.css.map */

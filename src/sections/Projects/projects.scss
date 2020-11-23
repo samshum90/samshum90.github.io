@@ -1,11 +1,5 @@
 @import "../../styles/main.scss";
 
-.project__wrapper {
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  width: 100%;
-}
-
 .project {
   display: flex;
   flex-direction: column;
@@ -90,7 +84,7 @@
     overflow: hidden;
 
     &-icon {
-      height: 1.6rem;
+      height: 2.2rem;
       margin-right: 1rem;
       display: block;
       float: left;
