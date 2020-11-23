@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "./Link";
+import PropTypes from "prop-types";
 
 import "./nav.scss";
 
@@ -25,6 +26,15 @@ const Nav = ({ sections }) => {
       </div>
     </nav>
   );
+};
+
+Nav.propTypes = {
+  sections: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      title: PropTypes.string,
+    })
+  ).isRequired,
 };
 
 export default Nav;

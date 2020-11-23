@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { github, globe, devpost } from "../../assets";
 
@@ -39,6 +40,28 @@ const Project = ({ project }) => {
       </div>
     </article>
   );
+};
+
+Project.propTypes = {
+  project: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    img: PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+    }).isRequired,
+    urls: PropTypes.shape({
+      github: PropTypes.string.isRequired,
+      live: PropTypes.string.isRequired,
+      dev: PropTypes.string.isRequired,
+    }).isRequired,
+    tech: PropTypes.arrayOf(
+      PropTypes.shape({
+        alt: PropTypes.string.isRequired,
+        src: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+  }).isRequired,
 };
 
 export default Project;

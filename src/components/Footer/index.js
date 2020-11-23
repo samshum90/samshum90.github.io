@@ -1,5 +1,6 @@
 import React from "react";
 
+import { cv } from "../../assets";
 import "./footer.scss";
 
 const Footer = () => {
@@ -51,7 +52,7 @@ const Footer = () => {
         </svg>
       </a>
 
-      <a className="footer__link" href="SamuelShumCv.pdf">
+      <a className="footer__link" href={cv} target="black">
         <svg className="footer__link-svg" viewBox="0 0 384 512" id="pdf">
           <path
             d="M369.9,97.9L286,14c-9-9-21.2-14.1-33.9-14.1H48C21.5,0,0,21.5,0,48v416c0,26.5,21.5,48,48,48h288

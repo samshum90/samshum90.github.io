@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "./header.scss";
 
@@ -15,6 +16,10 @@ const Header = ({ id }) => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  id: PropTypes.string.isRequired,
 };
 
 export default Header;
