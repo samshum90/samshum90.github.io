@@ -5,3 +5,4 @@ export { default as devpost } from "./devpost.svg";
 export { default as envelope } from "./envelope.svg";
 export { default as linkedin } from "./linkedin.svg";
 export { default as pdf } from "./pdf.svg";
+export { default as profile } from "./profile.png";

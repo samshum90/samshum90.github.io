@@ -21,7 +21,7 @@ import {
   angular,
   typescript,
   ruby,
-  java,
+  javaCircle,
   node,
   mongodb,
   firebase,
@@ -159,7 +159,7 @@ const projectList = [
     },
     tech: [
       {
-        src: java,
+        src: javaCircle,
         alt: "Java",
       },
       {
@@ -182,7 +182,7 @@ const projectList = [
     },
     tech: [
       {
-        src: java,
+        src: javaCircle,
         alt: "Java",
       },
       {

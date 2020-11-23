@@ -1,1 +1,26 @@
-<svg height="2500" viewBox=".4 .3 99.7 100" width="2500" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="m57.8 27.2-.1-26.9h-15l.1 26.9 7.5 10.3zm-15 46.1v27h15v-27l-7.5-10.3z" fill="#fff"/><path d="m57.8 73.3 15.8 21.8 12.1-8.8-15.8-21.8-12.1-3.9zm-15-46.1-15.9-21.8-12.1 8.8 15.8 21.8 12.2 3.9z" fill="#00f2e6"/><path d="m30.6 36-25.6-8.3-4.6 14.2 25.6 8.4 12.1-4zm31.8 18.2 7.5 10.3 25.6 8.3 4.6-14.2-25.6-8.3z" fill="#00b9f1"/><path d="m74.5 50.3 25.6-8.4-4.6-14.2-25.6 8.3-7.5 10.3zm-48.5 0-25.6 8.3 4.6 14.2 25.6-8.3 7.5-10.3z" fill="#d63aff"/><path d="m30.6 64.5-15.8 21.8 12.1 8.8 15.9-21.8v-12.7zm39.3-28.5 15.8-21.8-12.1-8.8-15.8 21.8v12.7z" fill="#fb015b"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2910 2954.6" style="enable-background:new 0 0 2910 2954.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#00F2E6;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#00B9F1;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#D63AFF;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#FB015B;}
+</style>
+<circle class="st0" cx="1455" cy="1499.6" r="1455"/>
+<g>
+	<path class="st1" d="M1643.8,903.5l-2.5-672.5h-375l2.5,672.5l187.5,257.5L1643.8,903.5z M1268.8,2056v675h375v-675l-187.5-257.5
+		L1268.8,2056z"/>
+	<path class="st2" d="M1643.8,2056l395,545l302.5-220l-395-545l-302.5-97.5L1643.8,2056z M1268.8,903.5l-397.5-545l-302.5,220
+		l395,545l305,97.5V903.5z"/>
+	<path class="st3" d="M963.8,1123.5L323.8,916l-115,355l640,210l302.5-100L963.8,1123.5z M1758.8,1578.5l187.5,257.5l640,207.5
+		l115-355l-640-207.5L1758.8,1578.5z"/>
+	<path class="st4" d="M2061.3,1481l640-210l-115-355l-640,207.5L1758.8,1381L2061.3,1481z M848.8,1481l-640,207.5l115,355l640-207.5
+		l187.5-257.5L848.8,1481z"/>
+	<path class="st5" d="M963.8,1836l-395,545l302.5,220l397.5-545v-317.5L963.8,1836z M1946.3,1123.5l395-545l-302.5-220l-395,545
+		V1221L1946.3,1123.5z"/>
+</g>
+</svg>

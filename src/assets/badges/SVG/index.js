@@ -7,6 +7,7 @@ export { default as angular } from "./angular.svg";
 export { default as typescript } from "./typescript.svg";
 export { default as ruby } from "./ruby.svg";
 export { default as java } from "./java.svg";
+export { default as javaCircle } from "./javaCircle.svg";
 export { default as node } from "./node.svg";
 export { default as mongodb } from "./mongodb.svg";
 export { default as firebase } from "./firebase.svg";

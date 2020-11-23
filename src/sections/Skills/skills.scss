@@ -1,4 +1,4 @@
-@import "../../styles/main.scss";
+// @import "../../styles/main.scss";
 
 .skills-wrapper {
   width: 100%;
@@ -24,8 +24,16 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    // grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     gap: 4rem 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    // &:nth-last-child(-n + 5) {
+    //   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    // }
   }
 
   &__list-item {

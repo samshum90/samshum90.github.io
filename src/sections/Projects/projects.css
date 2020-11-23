@@ -41,10 +41,6 @@ body {
   border: 1px solid #fff;
   position: relative;
   width: 100%;
-  -webkit-transition: -webkit-filter 0.5s ease;
-  transition: -webkit-filter 0.5s ease;
-  transition: filter 0.5s ease;
-  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
 }
 
 .project__image-wrapper::after {
