@@ -32,7 +32,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100000;
+  z-index: 100;
   width: 100%;
   -webkit-box-shadow: 0 0 5px #5275a8;
           box-shadow: 0 0 5px #5275a8;
