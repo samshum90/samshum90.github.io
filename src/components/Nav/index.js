@@ -10,15 +10,19 @@ const Nav = ({ sections }) => {
         <span className="nav__title-text">Samuel Shum</span>
       </div>
 
-      <ul className="nav__list">
+      <div className="nav__list">
         {sections.map(({ name, navName }, index) => (
-          <li key={name} role="none" className="nav__list-item">
-            <Link name={name} navName={navName} index={index}>
-              {navName}
-            </Link>
-          </li>
+          <Link
+            name={name}
+            navName={navName}
+            index={index}
+            key={name}
+            role="none"
+          >
+            {navName}
+          </Link>
         ))}
-      </ul>
+      </div>
     </nav>
   );
 };
