@@ -27,6 +27,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-width: 100rem;
+  min-width: 100rem;
   opacity: 1;
 }
 
@@ -52,9 +53,8 @@ body {
 }
 
 .banner {
-  padding: 30vh 0 0 2.5rem;
-  bottom: 8px;
-  left: 16px;
+  margin-top: 20vh;
+  padding: 3rem;
 }
 
 .banner__title {
@@ -62,7 +62,6 @@ body {
   letter-spacing: 0.05em;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 3rem;
   max-width: 50rem;
 }
 

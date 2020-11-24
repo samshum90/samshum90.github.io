@@ -161,6 +161,10 @@ body {
   opacity: 0;
 }
 
+.nav__list-item:hover {
+  color: #fc7a1e;
+}
+
 .nav__list-item:hover::after {
   opacity: 1;
 }

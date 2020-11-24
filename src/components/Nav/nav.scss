@@ -114,6 +114,8 @@
       }
 
       &:hover {
+        color: $accent-color;
+
         &::after {
           opacity: 1;
         }
@@ -121,10 +123,6 @@
 
       &--active {
         color: $theme-color;
-        // &::after {
-        //   filter: grayscale(100%)
-        //     drop-shadow(2px 2px 5px rgba(133, 132, 132, 0.4));
-        // }
       }
     }
   }
