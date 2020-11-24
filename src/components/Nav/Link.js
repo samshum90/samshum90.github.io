@@ -10,8 +10,8 @@ import {
 
 const Link = ({ name, navName, index }) => (
   <ScrollLink
-    className="nav__list-item"
-    activeClass="nav__list-item--active"
+    className="nav__bar-item"
+    activeClass="nav__bar-item--active"
     delay={SCROLL_DELAY}
     duration={SCROLL_DURATION + 150 * index}
     offset={SCROLL_OFFSET}

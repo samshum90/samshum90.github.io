@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { Nav, Footer } from "./components";
-import { Home } from "./containers";
+import { Nav, Footer, Content, Section } from "./components";
 import { About, Header, Projects, Skills } from "./sections";
 
 const sections = [
@@ -17,10 +16,28 @@ const sections = [
 ];
 
 function App() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <>
-      <Nav sections={sections} />
-      <Home sections={sections} />
+      <Nav
+        sections={sections}
+        setIsNavOpen={setIsNavOpen}
+        isNavOpen={isNavOpen}
+      />
+      <Content isNavOpen={isNavOpen}>
+        <Header id="home" />
+        <main>
+          {sections.map(({ Component, name, title }) => {
+            return (
+              name !== "home" && (
+                <Section id={name} title={title} key={name}>
+                  <Component />
+                </Section>
+              )
+            );
+          })}
+        </main>
+      </Content>
       <Footer />
     </>
   );

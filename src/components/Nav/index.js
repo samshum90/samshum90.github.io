@@ -1,17 +1,28 @@
 import React from "react";
-import Link from "./Link";
 import PropTypes from "prop-types";
 
+import RightNav from "./RightNav";
+import Link from "./Link";
 import "./nav.scss";
 
-const Nav = ({ sections }) => {
+const Nav = ({ sections, setIsNavOpen, isNavOpen }) => {
   return (
     <nav className="nav">
       <div className="nav__title">
         <span className="nav__title-text">Samuel Shum</span>
       </div>
 
-      <div className="nav__list">
+      <div className="burger__wrapper" onClick={() => setIsNavOpen(!isNavOpen)}>
+        <div
+          className={`burger ${
+            isNavOpen ? "open" : ""
+          } burger-arrow burger-right`}
+        >
+          <div className="burger-lines"></div>
+        </div>
+      </div>
+
+      <div className="nav__bar">
         {sections.map(({ name, navName }, index) => (
           <Link
             name={name}
@@ -24,6 +35,11 @@ const Nav = ({ sections }) => {
           </Link>
         ))}
       </div>
+      <RightNav
+        sections={sections}
+        setIsNavOpen={setIsNavOpen}
+        isNavOpen={isNavOpen}
+      />
     </nav>
   );
 };
@@ -35,6 +51,8 @@ Nav.propTypes = {
       navName: PropTypes.string.isRequired,
     })
   ).isRequired,
+  isNavOpen: PropTypes.bool.isRequired,
+  setIsNavOpen: PropTypes.func.isRequired,
 };
 
 export default Nav;

@@ -42,7 +42,7 @@ body {
   font-size: 3rem;
 }
 
-.nav__list {
+.nav__bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,7 +52,7 @@ body {
   margin-right: 0.5em;
 }
 
-.nav__list-item {
+.nav__bar-item {
   cursor: pointer;
   display: block;
   padding: 0.8rem 1.6rem;
@@ -63,7 +63,7 @@ body {
   margin-right: 2rem;
 }
 
-.nav__list-item::after {
+.nav__bar-item::after {
   content: "";
   position: absolute;
   top: 0;
@@ -82,13 +82,14 @@ body {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
-.nav__list-item:hover::after, .nav__list-item:focus::after {
+.nav__bar-item:hover::after, .nav__bar-item:focus::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.nav__list-item--active::after {
+.nav__bar-item--active::after {
   content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -103,5 +104,199 @@ body {
   transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.nav__list {
+  font-size: 1.6rem;
+  position: absolute;
+  padding: 20px 50px;
+  right: 0;
+  top: 100%;
+  max-width: 100%;
+  list-style: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.2s 0.1s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.2s 0.1s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.2s 0.1s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.2s 0.1s ease-in-out, -webkit-transform 0.2s 0.1s ease-in-out;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.nav__list--active {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0.2s ease-in-out, -webkit-transform 0.3s 0.1s ease-in-out;
+  transition: opacity 0.3s 0.2s ease-in-out, -webkit-transform 0.3s 0.1s ease-in-out;
+  transition: opacity 0.3s 0.2s ease-in-out, transform 0.3s 0.1s ease-in-out;
+  transition: opacity 0.3s 0.2s ease-in-out, transform 0.3s 0.1s ease-in-out, -webkit-transform 0.3s 0.1s ease-in-out;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.nav__list-item {
+  font-size: 3em;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  display: block;
+  padding: 0.5em;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+
+.nav__list-item::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  z-index: -1;
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  -webkit-filter: drop-shadow(2px 2px 5px rgba(237, 159, 75, 0.4));
+          filter: drop-shadow(2px 2px 5px rgba(237, 159, 75, 0.4));
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  opacity: 0;
+}
+
+.nav__list-item:hover::after {
+  opacity: 1;
+}
+
+.burger {
+  height: 3em;
+  width: 3em;
+  position: relative;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.burger__wrapper {
+  display: none;
+  position: fixed;
+  right: 0;
+  margin-right: 2em;
+}
+
+.burger .burger-lines:after {
+  left: 0;
+  top: -1em;
+}
+
+.burger .burger-lines:before {
+  left: 1em;
+  top: 1em;
+}
+
+.burger:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 150%;
+  width: 150%;
+  top: -25%;
+  left: -25%;
+}
+
+.burger .burger-lines {
+  top: 50%;
+  margin-top: -0.125em;
+}
+
+.burger .burger-lines, .burger .burger-lines:after, .burger .burger-lines:before {
+  pointer-events: none;
+  display: block;
+  content: "";
+  width: 100%;
+  border-radius: 0.25em;
+  background-color: #fff;
+  height: 0.25em;
+  position: absolute;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.burger .burger-lines:after {
+  left: 0;
+  top: -1em;
+}
+
+.burger .burger-lines:before {
+  left: 1em;
+  top: 1em;
+}
+
+.burger.burger-arrow .burger-lines, .burger.burger-arrow .burger-lines:after, .burger.burger-arrow .burger-lines:before {
+  -webkit-transition: 0.2s top, 0.2s left, 0.4s background-color 0.2s, 0.2s -webkit-transform;
+  transition: 0.2s top, 0.2s left, 0.4s background-color 0.2s, 0.2s -webkit-transform;
+  transition: 0.2s top, 0.2s left, 0.2s transform, 0.4s background-color 0.2s;
+  transition: 0.2s top, 0.2s left, 0.2s transform, 0.4s background-color 0.2s, 0.2s -webkit-transform;
+}
+
+.burger.burger-arrow .burger-lines:after, .burger.burger-arrow .burger-lines:before {
+  width: 2em;
+}
+
+.burger.burger-arrow.burger-right {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.burger.burger-arrow.burger-right .burger-lines:after {
+  left: 1em;
+  top: -1em;
+}
+
+.burger.burger-arrow.burger-right .burger-lines:before {
+  left: 0em;
+  top: 1em;
+}
+
+.burger.burger-arrow.open .burger-lines, .burger.burger-arrow.open .burger-lines:after, .burger.burger-arrow.open .burger-lines:before {
+  -webkit-transition: 0.2s background-color, 0.2s top, 0.2s left, 0.2s -webkit-transform;
+  transition: 0.2s background-color, 0.2s top, 0.2s left, 0.2s -webkit-transform;
+  transition: 0.2s background-color, 0.2s top, 0.2s left, 0.2s transform;
+  transition: 0.2s background-color, 0.2s top, 0.2s left, 0.2s transform, 0.2s -webkit-transform;
+}
+
+.burger.burger-arrow.open .burger-lines {
+  background-color: #fff;
+}
+
+.burger.burger-arrow.open .burger-lines:before, .burger.burger-arrow.open .burger-lines:after {
+  left: -0.3em;
+  top: 0px;
+}
+
+.burger.burger-arrow.open .burger-lines:before {
+  top: -0.62em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.burger.burger-arrow.open .burger-lines:after {
+  top: 0.62em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media (max-width: 750px) {
+  .nav__bar-item {
+    display: none;
+  }
+  .burger__wrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav {
+    padding: 1rem;
+  }
 }
 /*# sourceMappingURL=nav.css.map */
