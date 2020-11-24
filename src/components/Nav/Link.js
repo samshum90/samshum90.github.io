@@ -27,6 +27,7 @@ const Link = ({ name, navName, index }) => (
 Link.propTypes = {
   index: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
+  navName: PropTypes.string.isRequired,
 };
 
 export default Link;

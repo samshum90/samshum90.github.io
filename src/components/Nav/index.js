@@ -32,7 +32,7 @@ Nav.propTypes = {
   sections: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      title: PropTypes.string,
+      navName: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

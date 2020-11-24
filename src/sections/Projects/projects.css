@@ -70,7 +70,7 @@ body {
   position: relative;
   -webkit-transform-origin: top;
           transform-origin: top;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .project__title {
