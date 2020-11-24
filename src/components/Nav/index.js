@@ -30,6 +30,7 @@ const Nav = ({ sections, setIsNavOpen, isNavOpen }) => {
             index={index}
             key={name}
             role="none"
+            isNavOpen={isNavOpen}
           >
             {navName}
           </Link>

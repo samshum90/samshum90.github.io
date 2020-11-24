@@ -7,7 +7,7 @@ import "./nav.scss";
 const RightNav = ({ sections, setIsNavOpen, isNavOpen }) => {
   return (
     <ul
-      className={`nav__list${isNavOpen ? "--active" : ""}`}
+      className={`nav__list ${isNavOpen ? "nav__list--active" : ""}`}
       id="navigation"
       role="menu"
     >

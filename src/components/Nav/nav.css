@@ -165,6 +165,10 @@ body {
   opacity: 1;
 }
 
+.nav__list-item--active {
+  color: #5275a8;
+}
+
 .burger {
   height: 3em;
   width: 3em;
@@ -286,7 +290,7 @@ body {
 }
 
 @media (max-width: 750px) {
-  .nav__bar-item {
+  .nav__bar {
     display: none;
   }
   .burger__wrapper {

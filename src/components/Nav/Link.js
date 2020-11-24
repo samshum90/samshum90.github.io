@@ -8,10 +8,10 @@ import {
   SCROLL_OFFSET,
 } from "../../scrollconfig";
 
-const Link = ({ name, navName, index }) => (
+const Link = ({ name, navName, index, isNavOpen }) => (
   <ScrollLink
-    className="nav__bar-item"
-    activeClass="nav__bar-item--active"
+    className={`nav__${isNavOpen ? "list-item" : "bar-item"}`}
+    activeClass={`nav__${isNavOpen ? "list-item--active" : "bar-item--active"}`}
     delay={SCROLL_DELAY}
     duration={SCROLL_DURATION + 150 * index}
     offset={SCROLL_OFFSET}
