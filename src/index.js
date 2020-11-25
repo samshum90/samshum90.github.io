@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import { Loading } from "./components";
 import "./styles/main.scss";
 import reportWebVitals from "./reportWebVitals";
-
+// import App from "./App";
 const App = React.lazy(() => import("./App"));
 
 ReactDOM.render(

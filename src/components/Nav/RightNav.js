@@ -15,7 +15,6 @@ const RightNav = ({ sections, setIsNavOpen, isNavOpen }) => {
         <li key={name} role="none">
           <Link
             handleClick={() => setIsNavOpen(!isNavOpen)}
-            // handleSetActive={handleSetActive}
             index={index}
             isNavOpen={isNavOpen}
             name={name}
