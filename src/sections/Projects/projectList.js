@@ -13,6 +13,20 @@ import {
 } from "../../assets/projects/Img";
 
 import {
+  blackjackGif,
+  covidGif,
+  discretionGif,
+  fantasyAdventureGif,
+  ghibliGif,
+  gymGif,
+  hotelTechnikaGif,
+  recipeBookGif,
+  shopGif,
+  spendItGif,
+  ticTacToeGif,
+} from "../../assets/projects/Gif";
+
+import {
   // html,
   // sass,
   // javascript,
@@ -59,9 +73,13 @@ const projectList = [
   {
     title: "Gym Master 3000",
     description:
-      "My first full stack Ruby app 4 weeks into Codeclan during our first week long project. Built with a SQL database with Sinatra framework in the front end following MVC design.My brief was to build a app to be used in a gym.",
+      "My first full stack Ruby app 4 weeks into Codeclan during our first week long project. Built with a SQL database with Sinatra framework in the front end following MVC design. My brief was to build a app to be used in a gym.",
     img: {
       src: gymImg,
+      alt: "Gym Master 3000",
+    },
+    gif: {
+      src: gymGif,
       alt: "Gym Master 3000",
     },
     urls: {
@@ -83,6 +101,12 @@ const projectList = [
         alt: "Heroku",
       },
     ],
+    features: [
+      "CRUD functionality with members, classes and instructors",
+      "Class bookings are filtered to accept active and the correct membership type and cannot be assigned twice",
+      "Pictures can be uploaded to the member profiles",
+      "Filter the classes to view the classes that have been scheduled for today",
+    ],
   },
   {
     title: "Ghibli API",
@@ -90,6 +114,10 @@ const projectList = [
       "Weekend homework two weeks into learning JavaScript with the Vue.js framework and an API at CodeClan.",
     img: {
       src: ghibliImg,
+      alt: "Ghibli API",
+    },
+    gif: {
+      src: ghibliGif,
       alt: "Ghibli API",
     },
     urls: {
@@ -103,6 +131,11 @@ const projectList = [
         alt: "Vue",
       },
     ],
+    features: [
+      "Display data from an JSON API request",
+      "Clear separation of concerns (multiple components)",
+      "Vue's fetch promises, lifecycle hooks, multiple components, props and event bus",
+    ],
   },
   {
     title: "COVID-19 Angela App",
@@ -110,6 +143,10 @@ const projectList = [
       "This is my week long group project where we built a full stack web app that allow user in self isolation to make requests for help.",
     img: {
       src: covidImg,
+      alt: "Covid-19 Angela App",
+    },
+    gif: {
+      src: covidGif,
       alt: "Covid-19 Angela App",
     },
     urls: {
@@ -143,6 +180,14 @@ const projectList = [
         alt: "Netlify",
       },
     ],
+    features: [
+      "Add and manage requests on a local JSON API",
+      "Requests viewable in a list or map format by reusing components",
+      "Geolocation API used to locate the current user",
+      "Nominatim API used to obtain geo-coordinates",
+      "Leaflet maps used to place markers for each request so that the user can locate the requests around them",
+      "Google Chartsto display the number of requests in each category",
+    ],
   },
   {
     title: "Blackjack Game",
@@ -150,6 +195,10 @@ const projectList = [
       "This is my weekend homework after my first week of learning Java at CodeClan.",
     img: {
       src: blackjackImg,
+      alt: "Blackjack",
+    },
+    gif: {
+      src: blackjackGif,
       alt: "Blackjack",
     },
     urls: {
@@ -167,6 +216,12 @@ const projectList = [
         alt: "IntelliJ Idea",
       },
     ],
+    features: [
+      "Includes a runner to make a fully interactive text game",
+      "Multiplayer support with name input",
+      "Computer dealer opponent to play against",
+      "Built using Test Driven Development with JUnit",
+    ],
   },
   {
     title: "Fantasy Adventure Game",
@@ -174,6 +229,10 @@ const projectList = [
       "Weekend homework in Java where the task is to model a fantasy adventure to consolidate our learning of the four principles of object orientated programming Abstraction, Encapsulation, Inheritance and Polymorphism.",
     img: {
       src: fantasyAdventureImg,
+      alt: "Fantasy Adventure",
+    },
+    gif: {
+      src: fantasyAdventureGif,
       alt: "Fantasy Adventure",
     },
     urls: {
@@ -190,6 +249,13 @@ const projectList = [
         alt: "IntelliJ Idea",
       },
     ],
+    features: [
+      "Includes a runner to make a fully interactive text game",
+      "Multiplayer support with name input and choice of up to 7 characters",
+      "Multiple actions to choose from such as casting spells and healing",
+      "Randomly generated enemies with randomly generated stats and actions",
+      "Increasing difficulty",
+    ],
   },
   {
     title: "Our Shop Best Shop",
@@ -197,6 +263,10 @@ const projectList = [
       "Full-stack e commerce store built in React as the frontend and Spring Boot with a MongoDB database in the backend Codeclan merchandise was used as a prototype.",
     img: {
       src: shopImg,
+      alt: "Our Shop best Shop",
+    },
+    gif: {
+      src: shopGif,
       alt: "Our Shop best Shop",
     },
     urls: {
@@ -230,6 +300,17 @@ const projectList = [
         alt: "Semantic Ui",
       },
     ],
+    features: [
+      "Store authentication using JSON Web Tokens",
+      "Spring Security to secure Backend",
+      "React Router secure routes",
+      "Separated Owner panel and functions",
+      "Full search and filter capabilities",
+      "Basket saved on log in/out",
+      "Customer services chat window",
+      "Stripe was used to process payments",
+      "Semantic UI used for styling",
+    ],
   },
   {
     title: "Dis-creation",
@@ -237,6 +318,10 @@ const projectList = [
       "My team's entry to the Automation Anywhere COVID-19 Botathon hackathon. We built a Hr app to empower staff to make informed decisions on employee requests.",
     img: {
       src: discretionImg,
+      alt: "Dis-creation",
+    },
+    gif: {
+      src: discretionGif,
       alt: "Dis-creation",
     },
     urls: {
@@ -258,6 +343,11 @@ const projectList = [
         alt: "Vuetify",
       },
     ],
+    features: [
+      "Vue was used in the frontend and Python with Flask framework used on backend",
+      "Machine Learning used to presents specific policy information that is relevant to the request",
+      "Automation Anywhere Email bot is triggered to send a customised update on behalf of the manager to the individual.",
+    ],
   },
   {
     title: "Tic-Tac-Toe Game",
@@ -265,6 +355,10 @@ const projectList = [
       "Game I made after completing C Programming For Beginners - Master the C Language Udemy Tim Buchalka’s Learn Programming Academy, Jason Fedin",
     img: {
       src: ticTacToeImg,
+      alt: "Tic Tac Toe Game",
+    },
+    gif: {
+      src: ticTacToeGif,
       alt: "Tic Tac Toe Game",
     },
     urls: {
@@ -278,13 +372,18 @@ const projectList = [
         alt: "C Logo",
       },
     ],
+    features: ["2-Player"],
   },
   {
     title: "Hotel Technika",
     description:
-      "This Hotel management app was built to update and build familiarity with <b>React 16.8</b>. Designed to be used by hotel staff member to create rooms, register guests and to book guest into those rooms.",
+      "This Hotel management app was built to update and build familiarity with React 16.8. Designed to be used by hotel staff member to create rooms, register guests and to book guest into those rooms.",
     img: {
       src: hotelTechnikaImg,
+      alt: "Hotal Tchnika App",
+    },
+    gif: {
+      src: hotelTechnikaGif,
       alt: "Hotal Tchnika App",
     },
     urls: {
@@ -315,6 +414,12 @@ const projectList = [
         alt: "Material UI",
       },
     ],
+    features: [
+      "Firebase Realtime Database used as a backend",
+      "Features Firebase authentication",
+      "Redux store for state management",
+      "Fully built with modern React features such as hooks, useState, useEffects, useSelector and useDispatch",
+    ],
   },
   {
     title: "Recipe Book",
@@ -322,6 +427,10 @@ const projectList = [
       "App built during Angular - The Complete Guide (2020 Edition) by Maximilian Schwarzmüller course. App used to save recipes and also build a shopping list.",
     img: {
       src: recipeBookImg,
+      alt: "Recipe Book App",
+    },
+    gif: {
+      src: recipeBookGif,
       alt: "Recipe Book App",
     },
     urls: {
@@ -347,6 +456,12 @@ const projectList = [
         alt: "Bootstrap",
       },
     ],
+    features: [
+      "Firebase Realtime Database used as a backend",
+      "Features Firebase authentication",
+      "RxJs internally to handle asynchronous operations",
+      "NgRx for reactive state management",
+    ],
   },
   {
     title: "Spend it.",
@@ -354,6 +469,10 @@ const projectList = [
       "Progressive web app built in Angular using the Ionic Framework. Allow users to track their spending to have better control over their finances.",
     img: {
       src: spendItImg,
+      alt: "Spend It. app",
+    },
+    gif: {
+      src: spendItGif,
       alt: "Spend It. app",
     },
     urls: {
@@ -382,6 +501,11 @@ const projectList = [
         src: ionic,
         alt: "Ionic",
       },
+    ],
+    features: [
+      "Features Firebase authentication",
+      "Firebase Cloud Firestore used as a backend",
+      "ChartJs used for a visual repersantaion of finances ",
     ],
   },
 ];

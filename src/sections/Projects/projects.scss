@@ -6,6 +6,8 @@
   align-items: center;
   margin-bottom: 4rem;
   border: none;
+  width: 100%;
+  min-height: auto;
 
   &:last-child {
     margin-bottom: 0;
@@ -15,6 +17,7 @@
     border: 1px solid $text-color;
     position: relative;
     width: 100%;
+    height: auto;
 
     &::after {
       content: "";
@@ -107,5 +110,20 @@
     &:focus::after {
       transform: scaleX(1);
     }
+  }
+
+  &__gif {
+    width: 100%;
+    // height: ;
+    // display: block;
+    object-fit: cover;
+  }
+
+  &__list {
+    list-style-type: circle;
+    opacity: 0.75;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    padding: 0 3rem;
   }
 }

@@ -31,6 +31,8 @@ body {
           align-items: center;
   margin-bottom: 4rem;
   border: none;
+  width: 100%;
+  min-height: auto;
 }
 
 .project:last-child {
@@ -41,6 +43,7 @@ body {
   border: 1px solid #fff;
   position: relative;
   width: 100%;
+  height: auto;
 }
 
 .project__image-wrapper::after {
@@ -144,5 +147,19 @@ body {
 .project__link:hover::after, .project__link:focus::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.project__gif {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project__list {
+  list-style-type: circle;
+  opacity: 0.75;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  padding: 0 3rem;
 }
 /*# sourceMappingURL=projects.css.map */
