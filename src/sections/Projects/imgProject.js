@@ -10,6 +10,7 @@ const ImgProject = ({ project }) => {
     <>
       <div className="project__image-wrapper">
         <img className="project__image" src={img.src} alt={img.alt} />
+        <span class="project__image-text">hover me</span>
       </div>
       <div className="project__details">
         <h3 className="project__title">{title}</h3>

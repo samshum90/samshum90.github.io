@@ -1,24 +1,64 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import { github, globe, devpost } from "../../assets";
+import "./projects.scss";
 
 const GifProject = ({ project }) => {
-  const { title, features, gif, urls, tech } = project;
+  const [featuresList, setFeaturesList] = useState([]);
+  const nodeRef = React.useRef(null);
+  const { features, gif, urls, tech } = project;
+
+  useEffect(() => {
+    initializeFeatures();
+    return () => {
+      setFeaturesList([]);
+    };
+  }, []);
+
+  function initializeFeatures() {
+    let i = 0;
+    if (features.length === featuresList.length) {
+      return;
+    }
+
+    function insertFeature() {
+      setTimeout(function () {
+        const newFeature = features[i];
+        setFeaturesList((featuresList) => featuresList.concat(newFeature));
+        i++;
+        if (i < features.length) {
+          insertFeature();
+        }
+      }, 500);
+    }
+    if (i < features.length) {
+      insertFeature();
+    }
+  }
+
   return (
     <>
       <div className="project__image-wrapper">
         <img className="project__gif" src={gif.src} alt={gif.alt} />
       </div>
       <div className="project__details">
-        <h3 className="project__title">{title} features:</h3>
-        <ul className="project__list">
-          {features.map((feature, index) => (
-            <li className="project__list-item" key={index}>
-              {feature}
-            </li>
+        <h3 className="project__title">features:</h3>
+        <TransitionGroup className="project__list" component="ul">
+          {featuresList.map((feature, index) => (
+            <CSSTransition
+              key={index}
+              nodeRef={nodeRef}
+              timeout={500}
+              classNames="slide__in"
+            >
+              <li ref={nodeRef} className="project__list-item">
+                {feature}
+              </li>
+            </CSSTransition>
           ))}
-        </ul>
+        </TransitionGroup>
         <div className="project__tech">
           <p>Tech:</p>
           {tech.map(({ src, alt }) => (

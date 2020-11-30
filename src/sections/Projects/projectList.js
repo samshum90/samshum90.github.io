@@ -186,7 +186,7 @@ const projectList = [
       "Geolocation API used to locate the current user",
       "Nominatim API used to obtain geo-coordinates",
       "Leaflet maps used to place markers for each request so that the user can locate the requests around them",
-      "Google Chartsto display the number of requests in each category",
+      "Google Charts to display the number of requests in each category",
     ],
   },
   {
