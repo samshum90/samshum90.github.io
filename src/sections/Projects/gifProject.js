@@ -61,9 +61,20 @@ const GifProject = ({ project }) => {
         </TransitionGroup>
         <div className="project__tech">
           <p>Tech:</p>
-          {tech.map(({ src, alt }) => (
-            <img alt={alt} className="project__tech-item" key={src} src={src} />
-          ))}
+          {tech.map(({ src, alt }) => {
+            if (alt === "CSS/SCSS" || alt === "HTML" || alt === "Javascript") {
+              return null;
+            } else {
+              return (
+                <img
+                  alt={alt}
+                  className="project__tech-item"
+                  key={src}
+                  src={src}
+                />
+              );
+            }
+          })}
         </div>
         <div className="project__links-wrapper">
           <a className="project__link" href={urls.github}>
