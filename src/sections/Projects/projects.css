@@ -176,6 +176,69 @@ body {
   padding: 0 3rem;
 }
 
+.project__filter-wrapper {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project__filter-title {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  position: relative;
+  font-size: 1.5em;
+}
+
+.project__filter-button {
+  padding: 0.8rem 1.6rem;
+  border: 1px solid #6f93b4;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+}
+
+.project__filter-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #6f93b4;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.project__filter-button:hover::after, .project__filter-button:focus::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .slide__in-enter {
   opacity: 0;
   -webkit-transform: translateX(100%);

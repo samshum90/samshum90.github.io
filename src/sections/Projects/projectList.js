@@ -27,19 +27,19 @@ import {
 } from "../../assets/projects/Gif";
 
 import {
-  // html,
-  // sass,
-  // javascript,
+  html,
+  sass,
+  javascript,
   vue,
   react,
   angular,
   typescript,
   ruby,
   javaCircle,
-  // node,
+  node,
   mongodb,
   firebase,
-  // postgresql,
+  postgresql,
   // python,
   ionic,
   // cSharp,
@@ -89,12 +89,24 @@ const projectList = [
     },
     tech: [
       {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
         src: ruby,
-        alt: "ruby",
+        alt: "Ruby",
       },
       {
         src: sinatra,
-        alt: "sinatra",
+        alt: "Sinatra",
+      },
+      {
+        src: postgresql,
+        alt: "Postgres SQL",
       },
       {
         src: heroku,
@@ -127,6 +139,18 @@ const projectList = [
     },
     tech: [
       {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
+        src: javascript,
+        alt: "Javascript",
+      },
+      {
         src: vue,
         alt: "Vue",
       },
@@ -156,12 +180,24 @@ const projectList = [
     },
     tech: [
       {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
+        src: javascript,
+        alt: "Javascript",
+      },
+      {
         src: vue,
         alt: "Vue",
       },
       {
-        src: leaflet,
-        alt: "Leaflet",
+        src: node,
+        alt: "Express",
       },
       {
         src: mongodb,
@@ -170,6 +206,10 @@ const projectList = [
       {
         src: bootstrap,
         alt: "Bootstrap",
+      },
+      {
+        src: leaflet,
+        alt: "Leaflet",
       },
       {
         src: googleDeveloper,
@@ -276,6 +316,18 @@ const projectList = [
     },
     tech: [
       {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
+        src: javascript,
+        alt: "Javascript",
+      },
+      {
         src: react,
         alt: "React",
       },
@@ -330,6 +382,18 @@ const projectList = [
       dev: "https://devpost.com/software/dis-cretion-cnhlfw",
     },
     tech: [
+      {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
+        src: javascript,
+        alt: "Javascript",
+      },
       {
         src: vue,
         alt: "Vue",
@@ -394,6 +458,18 @@ const projectList = [
     },
     tech: [
       {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
+        src: javascript,
+        alt: "Javascript",
+      },
+      {
         src: react,
         alt: "React",
       },
@@ -440,6 +516,18 @@ const projectList = [
     },
     tech: [
       {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
+        src: javascript,
+        alt: "Javascript",
+      },
+      {
         src: angular,
         alt: "Angular",
       },
@@ -481,6 +569,18 @@ const projectList = [
       dev: null,
     },
     tech: [
+      {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
+        src: javascript,
+        alt: "Javascript",
+      },
       {
         src: angular,
         alt: "Angular",

@@ -5,7 +5,12 @@ import { About, Header, Projects, Skills } from "./sections";
 
 const sections = [
   { name: "home", Component: Header, title: "Home", navName: "Home" },
-  { name: "skills", Component: Skills, title: "Tech I know", navName: "Tech" },
+  {
+    name: "skills",
+    Component: Skills,
+    title: "Tech I know",
+    navName: "Tech",
+  },
   {
     name: "projects",
     Component: Projects,
@@ -17,6 +22,7 @@ const sections = [
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [filterBy, setFilterBy] = useState("");
   return (
     <>
       <Nav
@@ -31,7 +37,7 @@ function App() {
             return (
               name !== "home" && (
                 <Section id={name} title={title} key={name}>
-                  <Component />
+                  <Component filterBy={filterBy} setFilterBy={setFilterBy} />
                 </Section>
               )
             );

@@ -10,16 +10,27 @@ const ImgProject = ({ project }) => {
     <>
       <div className="project__image-wrapper">
         <img className="project__image" src={img.src} alt={img.alt} />
-        <span class="project__image-text">hover me</span>
+        <span className="project__image-text">hover me</span>
       </div>
       <div className="project__details">
         <h3 className="project__title">{title}</h3>
         <p className="project__description">{description}</p>
         <div className="project__tech">
           <p>Tech:</p>
-          {tech.map(({ src, alt }) => (
-            <img alt={alt} className="project__tech-item" key={src} src={src} />
-          ))}
+          {tech.map(({ src, alt }) => {
+            if (alt === "CSS/SCSS" || alt === "HTML" || alt === "Javascript") {
+              return null;
+            } else {
+              return (
+                <img
+                  alt={alt}
+                  className="project__tech-item"
+                  key={src}
+                  src={src}
+                />
+              );
+            }
+          })}
         </div>
         <div className="project__links-wrapper">
           <a className="project__link" href={urls.github}>

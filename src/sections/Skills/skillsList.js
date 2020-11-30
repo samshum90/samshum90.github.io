@@ -27,8 +27,8 @@ const skillsList = [
   {
     title: "My tech stack",
     skills: [
-      { name: "HTML 5", icon: html },
-      { name: "CSS 3/SCSS", icon: sass },
+      { name: "HTML", icon: html },
+      { name: "CSS/SCSS", icon: sass },
       { name: "Javascript", icon: javascript },
       { name: "Vue", icon: vue },
       { name: "React", icon: react },
@@ -36,8 +36,8 @@ const skillsList = [
       { name: "Typescript", icon: typescript },
       { name: "Ruby", icon: ruby },
       { name: "Java", icon: java },
-      { name: "Node Js", icon: node },
-      { name: "Mongo DB", icon: mongodb },
+      { name: "Express", icon: node },
+      { name: "Mongo Db", icon: mongodb },
       { name: "Firebase", icon: firebase },
       { name: "Postgres SQL", icon: postgresql },
     ],
