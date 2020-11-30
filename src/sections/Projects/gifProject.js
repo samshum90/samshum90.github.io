@@ -13,8 +13,10 @@ const GifProject = ({ project }) => {
       <div className="project__details">
         <h3 className="project__title">{title} features:</h3>
         <ul className="project__list">
-          {features.map((feature) => (
-            <li className="project__list-item">{feature}</li>
+          {features.map((feature, index) => (
+            <li className="project__list-item" key={index}>
+              {feature}
+            </li>
           ))}
         </ul>
         <div className="project__tech">

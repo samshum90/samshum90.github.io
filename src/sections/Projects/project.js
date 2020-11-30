@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import ImgProject from "./imgProject";
 import GifProject from "./gifProject";
 
-const Project = ({ project, key }) => {
+const Project = ({ project }) => {
   const [hover, setHover] = useState(false);
   return (
     <article
