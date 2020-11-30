@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Link from "./Link";
+import Link from "./link";
 import "./nav.scss";
 
 const RightNav = ({ sections, setIsNavOpen, isNavOpen }) => {
@@ -15,7 +15,6 @@ const RightNav = ({ sections, setIsNavOpen, isNavOpen }) => {
         <li key={name} role="none">
           <Link
             handleClick={() => setIsNavOpen(!isNavOpen)}
-            // handleSetActive={handleSetActive}
             index={index}
             isNavOpen={isNavOpen}
             name={name}

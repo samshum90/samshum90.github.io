@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import RightNav from "./RightNav";
-import Link from "./Link";
+import Link from "./link";
 import "./nav.scss";
 
 const Nav = ({ sections, setIsNavOpen, isNavOpen }) => {
