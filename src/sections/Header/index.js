@@ -20,7 +20,7 @@ const Header = ({ id }) => {
           <CSSTransition
             nodeRef={nodeRef}
             in={display}
-            timeout={1000}
+            timeout={600}
             unmountOnExit
             classNames="slide__down"
           >

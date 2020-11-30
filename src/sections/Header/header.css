@@ -103,17 +103,21 @@ body {
 
 .slide__in-enter-active {
   opacity: 0.7;
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
-  -webkit-transition: opacity 500ms ease-in, -webkit-transform 1000ms linear;
-  transition: opacity 500ms ease-in, -webkit-transform 1000ms linear;
-  transition: transform 1000ms linear, opacity 500ms ease-in;
-  transition: transform 1000ms linear, opacity 500ms ease-in, -webkit-transform 1000ms linear;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+  -webkit-transition: opacity 500ms ease-in, -webkit-transform 500ms linear;
+  transition: opacity 500ms ease-in, -webkit-transform 500ms linear;
+  transition: transform 500ms linear, opacity 500ms ease-in;
+  transition: transform 500ms linear, opacity 500ms ease-in, -webkit-transform 500ms linear;
 }
 
 .slide__in-enter-done {
   opacity: 1;
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition: opacity 500ms ease-in, -webkit-transform 100ms linear;
+  transition: opacity 500ms ease-in, -webkit-transform 100ms linear;
+  transition: transform 100ms linear, opacity 500ms ease-in;
+  transition: transform 100ms linear, opacity 500ms ease-in, -webkit-transform 100ms linear;
 }
 /*# sourceMappingURL=header.css.map */
