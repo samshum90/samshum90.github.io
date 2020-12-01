@@ -47,4 +47,23 @@ body {
 .about__text-para strong {
   color: #fc7a1e;
 }
+
+.info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info__blog-link, .info__github-link {
+  color: #5275a8;
+  margin-left: 0.5rem;
+}
 /*# sourceMappingURL=about.css.map */

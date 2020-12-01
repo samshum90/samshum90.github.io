@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
-import { Nav, Footer, Content, Section } from "./components";
+import { Home, Blog } from "./containers";
+import { Footer, Content } from "./components";
 import { About, Header, Projects, Skills } from "./sections";
+import { HashRouter, Route, Link } from "react-router-dom";
 
 const sections = [
   { name: "home", Component: Header, title: "Home", navName: "Home" },
@@ -22,28 +24,22 @@ const sections = [
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [filterBy, setFilterBy] = useState("");
   return (
     <>
-      <Nav
-        sections={sections}
-        setIsNavOpen={setIsNavOpen}
-        isNavOpen={isNavOpen}
-      />
-      <Content isNavOpen={isNavOpen}>
-        <Header id="home" />
-        <main>
-          {sections.map(({ Component, name, title }) => {
-            return (
-              name !== "home" && (
-                <Section id={name} title={title} key={name}>
-                  <Component filterBy={filterBy} setFilterBy={setFilterBy} />
-                </Section>
-              )
-            );
-          })}
-        </main>
-      </Content>
+      <HashRouter basename="/">
+        <Route
+          exact
+          path="/"
+          component={() => (
+            <Home
+              sections={sections}
+              setIsNavOpen={setIsNavOpen}
+              isNavOpen={isNavOpen}
+            />
+          )}
+        />
+        <Route path="/blog" component={() => <Blog />} />
+      </HashRouter>
       <Footer />
     </>
   );

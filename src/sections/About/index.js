@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { profile } from "../../assets";
 import "./about.scss";
@@ -35,6 +36,23 @@ const About = () => {
           living.
         </span>
       </p>
+      <div className="info">
+        <span className="info__blog">
+          To follow my journey visit my blog
+          <Link to="blog" className="info__blog-link">
+            here
+          </Link>
+        </span>
+        <span className="info__github">
+          Find the repo for this site
+          <a
+            href="https://github.com/samshum90/Portfolio_website_react"
+            className="info__github-link"
+          >
+            here
+          </a>
+        </span>
+      </div>
     </article>
   );
 };

@@ -1,23 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { Section } from "../../components";
+import { Nav, Section, Content } from "../../components";
 import { Header } from "../../sections";
 
-const Home = ({ sections }) => {
+const Home = ({ sections, isNavOpen, setIsNavOpen }) => {
+  const [filterBy, setFilterBy] = useState("");
+
   return (
     <>
-      <Header id="home" />
-      <main>
-        {sections.map(({ Component, name, title }) => {
-          return (
-            name !== "home" && (
-              <Section id={name} title={title} key={name}>
-                <Component />
-              </Section>
-            )
-          );
-        })}
-      </main>
+      <Nav
+        sections={sections}
+        setIsNavOpen={setIsNavOpen}
+        isNavOpen={isNavOpen}
+      />
+      <Content isNavOpen={isNavOpen}>
+        <Header id="home" />
+        <main>
+          {sections.map(({ Component, name, title }) => {
+            return (
+              name !== "home" && (
+                <Section id={name} title={title} key={name}>
+                  <Component filterBy={filterBy} setFilterBy={setFilterBy} />
+                </Section>
+              )
+            );
+          })}
+        </main>
+      </Content>
     </>
   );
 };

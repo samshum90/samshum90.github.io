@@ -37,3 +37,17 @@
     }
   }
 }
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__blog,
+  &__github {
+    &-link {
+      color: $theme-color;
+      margin-left: 0.5rem;
+    }
+  }
+}

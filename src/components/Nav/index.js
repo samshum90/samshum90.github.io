@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import RightNav from "./RightNav";
+import RightNav from "./rightNav";
 import Link from "./link";
 import "./nav.scss";
 
