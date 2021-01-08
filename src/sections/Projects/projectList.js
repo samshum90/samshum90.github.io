@@ -73,7 +73,7 @@ import {
   chartjs,
 } from "../../assets/badges/SVG";
 
-import { sinatra, materialUi } from "../../assets/badges/PNG";
+import { sinatra, materialUi, rtl } from "../../assets/badges/PNG";
 
 const projectList = [
   {
@@ -699,6 +699,10 @@ const projectList = [
       {
         src: typescript,
         alt: "Typescript",
+      },
+      {
+        src: rtl,
+        alt: "React Testing Library",
       },
     ],
     features: [
