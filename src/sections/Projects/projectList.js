@@ -2,12 +2,15 @@ import {
   blackjackImg,
   covidImg,
   discretionImg,
+  datingImg,
   fantasyAdventureImg,
   ghibliImg,
   gymImg,
   hotelTechnikaImg,
+  pycpImg,
   recipeBookImg,
   shopImg,
+  spaceXImg,
   spendItImg,
   ticTacToeImg,
 } from "../../assets/projects/Img";
@@ -15,6 +18,8 @@ import {
 import {
   blackjackGif,
   covidGif,
+  pycpGif,
+  datingGif,
   discretionGif,
   fantasyAdventureGif,
   ghibliGif,
@@ -22,6 +27,7 @@ import {
   hotelTechnikaGif,
   recipeBookGif,
   shopGif,
+  spaceXGif,
   spendItGif,
   ticTacToeGif,
 } from "../../assets/projects/Gif";
@@ -42,8 +48,8 @@ import {
   postgresql,
   // python,
   ionic,
-  // cSharp,
-  // net,
+  cSharp,
+  net,
   // xd,
   // inDesign,
   // illustrator,
@@ -439,6 +445,54 @@ const projectList = [
     features: ["2-Player"],
   },
   {
+    title: "PYCP Project",
+    description:
+      "This management app was built for the PYCP Charity to update them to a paperless registration system which complies with GDPR. Due to an NDA the source code cannot be shared.",
+    img: {
+      src: pycpImg,
+      alt: "PYCP App",
+    },
+    gif: {
+      src: pycpGif,
+      alt: "PYCP App",
+    },
+    urls: {
+      github: null,
+      live: null,
+      dev: null,
+    },
+    tech: [
+      {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
+        src: javascript,
+        alt: "Javascript",
+      },
+      {
+        src: react,
+        alt: "React",
+      },
+      {
+        src: reactRouter,
+        alt: "React Router",
+      },
+      {
+        src: firebase,
+        alt: "Firebase",
+      },
+    ],
+    features: [
+      "Firebase Realtime Database used as a backend",
+      "Features Firebase authentication",
+    ],
+  },
+  {
     title: "Hotel Technika",
     description:
       "This Hotel management app was built to update and build familiarity with React 16.8. Designed to be used by hotel staff member to create rooms, register guests and to book guest into those rooms.",
@@ -606,6 +660,106 @@ const projectList = [
       "Features Firebase authentication",
       "Firebase Cloud Firestore used as a backend",
       "ChartJs used for a visual repersantaion of finances ",
+    ],
+  },
+  {
+    title: "SpaceX",
+    description:
+      "Frontend project built using the SpaceX API for Launch information. Built to learn Typescript in React as well as the React Testing Library",
+    img: {
+      src: spaceXImg,
+      alt: "Space X app",
+    },
+    gif: {
+      src: spaceXGif,
+      alt: "Space X app",
+    },
+    urls: {
+      github: "https://github.com/samshum90/SpaceX_React_TypeScript_API",
+      live: "https://samshum90.github.io/SpaceX_React_TypeScript_API/",
+      dev: null,
+    },
+    tech: [
+      {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
+        src: javascript,
+        alt: "Javascript",
+      },
+      {
+        src: react,
+        alt: "React",
+      },
+      {
+        src: typescript,
+        alt: "Typescript",
+      },
+    ],
+    features: [
+      "Unit Tested with React Testing Library",
+      "Type Safety with TypeScript",
+    ],
+  },
+  {
+    title: "Dating app",
+    description:
+      "Built following Neil Cummings' Build an app with ASPNET Core and Angular from scratch.",
+    img: {
+      src: datingImg,
+      alt: "Dating app",
+    },
+    gif: {
+      src: datingGif,
+      alt: "Datingapp",
+    },
+    urls: {
+      github: "https://github.com/samshum90/Dating_App_Angular_.Net",
+      live: null,
+      dev: null,
+    },
+    tech: [
+      {
+        src: html,
+        alt: "HTML",
+      },
+      {
+        src: sass,
+        alt: "CSS/SCSS",
+      },
+      {
+        src: javascript,
+        alt: "Javascript",
+      },
+      {
+        src: angular,
+        alt: "Angular",
+      },
+      {
+        src: typescript,
+        alt: "Typescript",
+      },
+      {
+        src: cSharp,
+        alt: "C#",
+      },
+      {
+        src: net,
+        alt: ".NET 5",
+      },
+    ],
+    features: [
+      "Drag and drop photo upload integrating into a cloud platform Cloudinary",
+      "Filtering, sorting and paging of data",
+      "Identity and Role Management",
+      "Authentication using JWT Authentication tokens",
+      "Persist data using Entity Framework Core",
+      "Using SignalR for real time presence and live messaging between users",
     ],
   },
 ];

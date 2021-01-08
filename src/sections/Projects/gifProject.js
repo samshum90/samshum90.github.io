@@ -77,10 +77,12 @@ const GifProject = ({ project }) => {
           })}
         </div>
         <div className="project__links-wrapper">
-          <a className="project__link" href={urls.github}>
-            <img alt="Github" className="project__link-icon" src={github} />
-            Code
-          </a>
+          {urls.github && (
+            <a className="project__link" href={urls.github}>
+              <img alt="Github" className="project__link-icon" src={github} />
+              Code
+            </a>
+          )}
           {urls.live && (
             <a className="project__link" href={urls.live}>
               <img alt="Live" className="project__link-icon" src={globe} />

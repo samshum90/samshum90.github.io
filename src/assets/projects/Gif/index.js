@@ -1,11 +1,14 @@
 export { default as blackjackGif } from "./blackjack.gif";
 export { default as covidGif } from "./covid.gif";
+export { default as datingGif } from "./dating.gif";
 export { default as discretionGif } from "./dis-cretion.gif";
 export { default as fantasyAdventureGif } from "./fantasyAdventure.gif";
 export { default as ghibliGif } from "./ghibli.gif";
 export { default as gymGif } from "./gym.gif";
 export { default as hotelTechnikaGif } from "./hotelTechnika.gif";
+export { default as pycpGif } from "./pycp.gif";
 export { default as recipeBookGif } from "./recipeBook.gif";
 export { default as shopGif } from "./shop.gif";
 export { default as spendItGif } from "./spendIt.gif";
+export { default as spaceXGif } from "./spacex.gif";
 export { default as ticTacToeGif } from "./ticTacToe.gif";
