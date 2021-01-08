@@ -447,7 +447,7 @@ const projectList = [
   {
     title: "PYCP Project",
     description:
-      "This management app was built for the PYCP Charity to update them to a paperless registration system which complies with GDPR. Due to an NDA the source code cannot be shared.",
+      "This management app was built for the PYCP Charity to transition them to a paperless registration system which complies with GDPR. Due to an NDA the source code cannot be shared.",
     img: {
       src: pycpImg,
       alt: "PYCP App",
@@ -759,7 +759,7 @@ const projectList = [
       "Identity and Role Management",
       "Authentication using JWT Authentication tokens",
       "Persist data using Entity Framework Core",
-      "Using SignalR for real time presence and live messaging between users",
+      "SignalR for real time presence and live messaging between users",
     ],
   },
 ];
