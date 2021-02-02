@@ -447,7 +447,7 @@ const projectList = [
   {
     title: "PYCP Project",
     description:
-      "This management app was built for the PYCP Charity to transition them to a paperless registration system which complies with GDPR. Due to an NDA the source code cannot be shared.",
+      "Joined a a project which had been running for 6 months to build a management app for the PYCP Charity to transition them to a paperless registration system which complies with GDPR. In less then a month we rewrote the backend onto Firebase and deployed version 1. Due to an NDA the source code cannot be shared.",
     img: {
       src: pycpImg,
       alt: "PYCP App",
