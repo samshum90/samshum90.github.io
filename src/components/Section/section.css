@@ -11,10 +11,10 @@ html {
 }
 
 body {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 1.6rem;
   color: #fff;
   background: #0a1621;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1.6rem;
   padding-top: 90px;
 }
 
@@ -29,7 +29,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 4rem;
   padding-bottom: 4rem;
   width: 60%;
   margin: 0 auto;

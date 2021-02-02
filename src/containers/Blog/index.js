@@ -1,6 +1,19 @@
 import React from "react";
 
-const Blog = () => {
-  return <h1>I'm the blog</h1>;
+import { Content } from "../../components";
+import { BlogNav, BlogHeader, Posts } from "../../components";
+
+const Blog = ({ isNavOpen, setIsNavOpen }) => {
+  return (
+    <>
+      <BlogNav setIsNavOpen={setIsNavOpen} isNavOpen={isNavOpen} />
+      <Content isNavOpen={isNavOpen}>
+        <BlogHeader id="home" />
+        <main>
+          <Posts />
+        </main>
+      </Content>
+    </>
+  );
 };
 export default Blog;

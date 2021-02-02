@@ -1,9 +1,32 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import { Nav, Section, Content } from "../../components";
-import { Header } from "../../sections";
+import { About, Header, Projects, Skills } from "../../sections";
 
-const Home = ({ sections, isNavOpen, setIsNavOpen }) => {
+const sections = [
+  { name: "home", Component: Header, title: "Home", navName: "Home" },
+  {
+    name: "skills",
+    Component: Skills,
+    title: "Tech I know",
+    navName: "Tech",
+  },
+  {
+    name: "projects",
+    Component: Projects,
+    title: "Projects",
+    navName: "Projects",
+  },
+  {
+    name: "about",
+    Component: About,
+    title: "About me",
+    navName: "About",
+  },
+];
+
+const Home = ({ isNavOpen, setIsNavOpen }) => {
   const [filterBy, setFilterBy] = useState("");
 
   return (
@@ -29,6 +52,11 @@ const Home = ({ sections, isNavOpen, setIsNavOpen }) => {
       </Content>
     </>
   );
+};
+
+Home.propTypes = {
+  isNavOpen: PropTypes.bool.isRequired,
+  setIsNavOpen: PropTypes.func.isRequired,
 };
 
 export default Home;

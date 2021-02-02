@@ -11,9 +11,9 @@ html {
 }
 
 body {
-  font-family: $text-font;
-  font-size: $font-size;
   color: $text-color;
   background: $body-background-color;
+  font-family: $text-font;
+  font-size: $font-size;
   padding-top: $header-height;
 }

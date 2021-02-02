@@ -17,4 +17,9 @@ body {
   font-size: 1.6rem;
   padding-top: 90px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.posts {
+  background: #fffffa;
+  height: 100vh;
+}
+/*# sourceMappingURL=posts.css.map */
