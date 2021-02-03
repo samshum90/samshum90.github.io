@@ -20,7 +20,7 @@ body {
 
 .blogHeader {
   position: relative;
-  min-height: 60vh;
+  min-height: 55vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,11 +30,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../../assets/blog_banner.jpg");
+  background-image: url("../../assets/blog_banner.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 90px;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   background-color: #fffffa;
 }
 
@@ -45,7 +45,7 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .blogHeader__title {

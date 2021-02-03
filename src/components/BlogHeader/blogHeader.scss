@@ -2,16 +2,16 @@
 
 .blogHeader {
   position: relative;
-  min-height: 60vh;
+  min-height: 55vh;
   //   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../assets/blog_banner.jpg");
+  background-image: url("../../assets/blog_banner.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 $header-height;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   background-color: $blog-body-background-color;
 
   &::before {
@@ -21,7 +21,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   &__title {
